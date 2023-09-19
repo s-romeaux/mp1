@@ -15,3 +15,29 @@ body {
     width: 50px;
     height: auto;
 }
+
+.verb, verb-placeholder {
+    text-align: center;
+}
+
+.number-person-placeholders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-person-placeholders p {
+    margin-right: 30px; 
+}
+
+.answers ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 15px;
+}
