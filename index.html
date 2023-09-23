@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Practice French Verbs!</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Let's Practice French Verbs!</h1>
     <p>
-        You will be presented with a verb in its infinitive form and details about whether to make it singular or plural, and which person to put it in (e.g., first, second, third person).
+        You will be presented with a verb in its infinitive form and the corresponding English subject pronoun.
     </p>
-    <p>
-        For each verb correctly conjugated on the first try, you will receive 10 croissants.
-    </p>
-    <p>
-        If you conjugate it successfully on the second try, you will receive 5 croissants.
-    </p>
-    <p>
-        Any additional correct attempts will only receive 1 croissant.
-    </p>
+    <ul class="bullet-list">
+        <li>For each verb correctly conjugated on the first try, you will receive 10 croissants.</li>
+        <li>If you conjugate it successfully on the second try, you will receive 5 croissants.</li>
+        <li>Any additional correct attempts will only receive 1 croissant.</li>
+    </ul>
     <div class="game-container">
         <p>
             Score: <span id="score">0</span>
@@ -28,10 +26,11 @@
 
         <div class="game-box">
             <div class="game-variables-area">
-                <div class="verb"><p>Verb: <span id="verb-placeholder">Verb</span></p></div>
-                <div class="number-person-placeholders">
-                    <p>Number: <span id="number-placeholder">Number</span></p>
-                    <p>Person: <span id="person-placeholder">Person</span></p>
+                <div class="game-variables-area">
+                    <div class="verb"><p>Verb: <span id="verb-placeholder">Verb</span></p></div>
+                    <div class="number-person-placeholders">
+                        <p>English Subject Pronoun: <span id="english-subject-placeholder">English Subject</span></p>
+                    </div>
                 </div>
             </div>
             
@@ -41,7 +40,9 @@
                     <li><button id="answer1">Answer 1</button></li>
                     <li><button id="answer2">Answer 2</button></li>
                     <li><button id="answer3">Answer 3</button></li>
-                    <li><button id="answer4">Answer 4</button></li>
+                    <li><button id="answer4">Answer 4</button></li>                    
+                    <li><button id="answer5">Answer 5</button></li>
+                    <li><button id="answer6">Answer 6</button></li>
                 </ul>
             </div>
         </div>

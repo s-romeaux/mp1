@@ -1,6 +1,9 @@
+h1 {
+    font-family: 'Parisienne', cursive;
+}
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .game-container {
@@ -16,18 +19,40 @@ body {
     height: auto;
 }
 
-.verb, verb-placeholder {
-    text-align: center;
+.verb, #verb-placeholder {
+    text-align: center;    
 }
 
+.verb,
 .number-person-placeholders {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
+
 
 .number-person-placeholders p {
     margin-right: 30px; 
+}
+
+@media screen and (min-width: 768px) {
+    .answers ul {
+        justify-content: space-between; /* Arrange buttons in a row */
+        flex-wrap: wrap;
+    }
+    
+    .answers li {
+        width: calc(33.33% - 10px); 
+    }
+}
+@media screen and (max-width: 767px) {
+    .answers li {
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 480px) {
+    .answers li {
+        width: calc(100% - 10px);
+    }
 }
 
 .answers ul {
@@ -38,6 +63,49 @@ body {
     padding: 0;
 }
 
-.answers li {
-    margin: 15px;
+.answers li{
+    margin: 5px;
+    justify-content: center;
+}
+
+ul.bullet-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.bullet-list li::before {
+    content: "⚜️"; /* Fleur-de-lis symbol */
+    margin-right: 8px;
+}
+div.verb {
+    background-color: #EF4135;
+    font-size: 24px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+.number-person-placeholders {
+    background-color: white;
+    color: #0055A4;
+    font-size: 24px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+button {
+    background-color: #fcb52a;
+    color: black;
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #22e86e;
 }
