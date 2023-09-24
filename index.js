@@ -1,1657 +1,1169 @@
 const verbData = [    
     {
-        frenchInfinitive: "agir",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'agis ",
-        frenchConjugationsBank: ["j'agis", "tu agis", "il/elle/on agit", "nous agissons", "vous agissez", "ils/elles agissent" ],
+        "frenchInfinitive": "aller",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je vais",
+        "frenchConjugationsBank": ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont"]
     },
     {
-        frenchInfinitive: "agir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu agis ",
-        frenchConjugationsBank: ["j'agis", "tu agis", "il/elle/on agit", "nous agissons", "vous agissez", "ils/elles agissent" ],
+        "frenchInfinitive": "aller",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu vas",
+        "frenchConjugationsBank": ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont"]
     },
     {
-        frenchInfinitive: "agir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on agit ",
-        frenchConjugationsBank: ["j'agis", "tu agis", "il/elle/on agit", "nous agissons", "vous agissez", "ils/elles agissent" ],
+        "frenchInfinitive": "aller",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on va",
+        "frenchConjugationsBank": ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont"]
     },
     {
-        frenchInfinitive: "agir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous agissons ",
-        frenchConjugationsBank: ["j'agis", "tu agis", "il/elle/on agit", "nous agissons", "vous agissez", "ils/elles agissent" ],
+        "frenchInfinitive": "aller",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous allons",
+        "frenchConjugationsBank": ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont"]
     },
     {
-        frenchInfinitive: "agir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous agissez ",
-        frenchConjugationsBank: ["j'agis", "tu agis", "il/elle/on agit", "nous agissons", "vous agissez", "ils/elles agissent" ],
+        "frenchInfinitive": "aller",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous allez",
+        "frenchConjugationsBank": ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont"]
     },
     {
-        frenchInfinitive: "agir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles agissent ",
-        frenchConjugationsBank: ["j'agis", "tu agis", "il/elle/on agit", "nous agissons", "vous agissez", "ils/elles agissent" ],
+        "frenchInfinitive": "aller",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles vont",
+        "frenchConjugationsBank": ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont"]
     },
     {
-        frenchInfinitive: "aimer",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'aime ",
-        frenchConjugationsBank: ["j'aime", "tu aimes", "il/elle/on aime", "nous aimons", "vous aimez", "ils/elles aiment" ],
+        "frenchInfinitive": "chercher",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je cherche",
+        "frenchConjugationsBank": ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent"]
     },
     {
-        frenchInfinitive: "aimer",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu aimes ",
-        frenchConjugationsBank: ["j'aime", "tu aimes", "il/elle/on aime", "nous aimons", "vous aimez", "ils/elles aiment" ],
+        "frenchInfinitive": "chercher",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu cherches",
+        "frenchConjugationsBank": ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent"]
     },
     {
-        frenchInfinitive: "aimer",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on aime ",
-        frenchConjugationsBank: ["j'aime", "tu aimes", "il/elle/on aime", "nous aimons", "vous aimez", "ils/elles aiment" ],
+        "frenchInfinitive": "chercher",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on cherche",
+        "frenchConjugationsBank": ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent"]
     },
     {
-        frenchInfinitive: "aimer",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous aimons ",
-        frenchConjugationsBank: ["j'aime", "tu aimes", "il/elle/on aime", "nous aimons", "vous aimez", "ils/elles aiment" ],
+        "frenchInfinitive": "chercher",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous cherchons",
+        "frenchConjugationsBank": ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent"]
     },
     {
-        frenchInfinitive: "aimer",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous aimez ",
-        frenchConjugationsBank: ["j'aime", "tu aimes", "il/elle/on aime", "nous aimons", "vous aimez", "ils/elles aiment" ],
+        "frenchInfinitive": "chercher",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous cherchez",
+        "frenchConjugationsBank": ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent"]
     },
     {
-        frenchInfinitive: "aimer",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles aiment ",
-        frenchConjugationsBank: ["j'aime", "tu aimes", "il/elle/on aime", "nous aimons", "vous aimez", "ils/elles aiment" ],
+        "frenchInfinitive": "chercher",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles cherchent",
+        "frenchConjugationsBank": ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent"]
     },
     {
-        frenchInfinitive: "aller",
-        englishPersonNumber: "I",
-        frenchConjugated: "je vais ",
-        frenchConjugationsBank: ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont" ],
+        "frenchInfinitive": "étudier",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "j'étudie",
+        "frenchConjugationsBank": ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient"]
     },
     {
-        frenchInfinitive: "aller",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu vas ",
-        frenchConjugationsBank: ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont" ],
+        "frenchInfinitive": "étudier",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu étudies",
+        "frenchConjugationsBank": ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient"]
     },
     {
-        frenchInfinitive: "aller",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on va ",
-        frenchConjugationsBank: ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont" ],
+        "frenchInfinitive": "étudier",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on étudie",
+        "frenchConjugationsBank": ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient"]
     },
     {
-        frenchInfinitive: "aller",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous allons ",
-        frenchConjugationsBank: ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont" ],
+        "frenchInfinitive": "étudier",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous étudions",
+        "frenchConjugationsBank": ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient"]
     },
     {
-        frenchInfinitive: "aller",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous allez ",
-        frenchConjugationsBank: ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont" ],
+        "frenchInfinitive": "étudier",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous étudiez",
+        "frenchConjugationsBank": ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient"]
     },
     {
-        frenchInfinitive: "aller",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles vont ",
-        frenchConjugationsBank: ["je vais", "tu vas", "il/elle/on va", "nous allons", "vous allez", "ils/elles vont" ],
+        "frenchInfinitive": "étudier",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles étudient",
+        "frenchConjugationsBank": ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient"]
     },
     {
-        frenchInfinitive: "apprendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'apprends ",
-        frenchConjugationsBank: ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent" ],
+        "frenchInfinitive": "habiter",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "j'habite",
+        "frenchConjugationsBank": ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent"]
     },
     {
-        frenchInfinitive: "apprendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu apprends ",
-        frenchConjugationsBank: ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent" ],
+        "frenchInfinitive": "habiter",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu habites",
+        "frenchConjugationsBank": ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent"]
     },
     {
-        frenchInfinitive: "apprendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on apprend ",
-        frenchConjugationsBank: ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent" ],
+        "frenchInfinitive": "habiter",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on habite",
+        "frenchConjugationsBank": ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent"]
     },
     {
-        frenchInfinitive: "apprendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous apprenons ",
-        frenchConjugationsBank: ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent" ],
+        "frenchInfinitive": "habiter",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous habitons",
+        "frenchConjugationsBank": ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent"]
     },
     {
-        frenchInfinitive: "apprendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous apprenez ",
-        frenchConjugationsBank: ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent" ],
+        "frenchInfinitive": "habiter",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous habitez",
+        "frenchConjugationsBank": ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent"]
     },
     {
-        frenchInfinitive: "apprendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles apprennent ",
-        frenchConjugationsBank: ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent" ],
+        "frenchInfinitive": "habiter",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles habitent",
+        "frenchConjugationsBank": ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'attends ",
-        frenchConjugationsBank: ["j'attends", "j'attends", "tu attends", "tu attends", "il/elle/on attend", "il/elle/on attend" ],
+        "frenchInfinitive": "manger",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je mange",
+        "frenchConjugationsBank": ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "j'attends ",
-        frenchConjugationsBank: ["j'attends", "j'attends", "tu attends", "tu attends", "il/elle/on attend", "il/elle/on attend" ],
+        "frenchInfinitive": "manger",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu manges",
+        "frenchConjugationsBank": ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "tu attends ",
-        frenchConjugationsBank: ["j'attends", "j'attends", "tu attends", "tu attends", "il/elle/on attend", "il/elle/on attend" ],
+        "frenchInfinitive": "manger",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on mange",
+        "frenchConjugationsBank": ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "tu attends ",
-        frenchConjugationsBank: ["j'attends", "j'attends", "tu attends", "tu attends", "il/elle/on attend", "il/elle/on attend" ],
+        "frenchInfinitive": "manger",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous mangeons",
+        "frenchConjugationsBank": ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "il/elle/on attend ",
-        frenchConjugationsBank: ["j'attends", "j'attends", "tu attends", "tu attends", "il/elle/on attend", "il/elle/on attend" ],
+        "frenchInfinitive": "manger",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous mangez",
+        "frenchConjugationsBank": ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "il/elle/on attend ",
-        frenchConjugationsBank: ["j'attends", "j'attends", "tu attends", "tu attends", "il/elle/on attend", "il/elle/on attend" ],
+        "frenchInfinitive": "manger",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles mangent",
+        "frenchConjugationsBank": ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "nous attendons ",
-        frenchConjugationsBank: ["nous attendons", "nous attendons", "vous attendez", "vous attendez", "ils/elles attendent", "ils/elles attendent" ],
+        "frenchInfinitive": "parler",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je parle",
+        "frenchConjugationsBank": ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "nous attendons ",
-        frenchConjugationsBank: ["nous attendons", "nous attendons", "vous attendez", "vous attendez", "ils/elles attendent", "ils/elles attendent" ],
+        "frenchInfinitive": "parler",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu parles",
+        "frenchConjugationsBank": ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "vous attendez ",
-        frenchConjugationsBank: ["nous attendons", "nous attendons", "vous attendez", "vous attendez", "ils/elles attendent", "ils/elles attendent" ],
+        "frenchInfinitive": "parler",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on parle",
+        "frenchConjugationsBank": ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "vous attendez ",
-        frenchConjugationsBank: ["nous attendons", "nous attendons", "vous attendez", "vous attendez", "ils/elles attendent", "ils/elles attendent" ],
+        "frenchInfinitive": "parler",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous parlons",
+        "frenchConjugationsBank": ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "ils/elles attendent ",
-        frenchConjugationsBank: ["nous attendons", "nous attendons", "vous attendez", "vous attendez", "ils/elles attendent", "ils/elles attendent" ],
+        "frenchInfinitive": "parler",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous parlez",
+        "frenchConjugationsBank": ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent"]
     },
     {
-        frenchInfinitive: "attendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles attendent ",
-        frenchConjugationsBank: ["nous attendons", "nous attendons", "vous attendez", "vous attendez", "ils/elles attendent", "ils/elles attendent" ],
+        "frenchInfinitive": "parler",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles parlent",
+        "frenchConjugationsBank": ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent"]
     },
     {
-        frenchInfinitive: "boire",
-        englishPersonNumber: "I",
-        frenchConjugated: "je bois ",
-        frenchConjugationsBank: ["je bois", "tu bois", "il/elle/on boit", "nous buvons", "vous buvez", "ils/elles boivent" ],
+        "frenchInfinitive": "penser",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je pense",
+        "frenchConjugationsBank": ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent"]
     },
     {
-        frenchInfinitive: "boire",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu bois ",
-        frenchConjugationsBank: ["je bois", "tu bois", "il/elle/on boit", "nous buvons", "vous buvez", "ils/elles boivent" ],
+        "frenchInfinitive": "penser",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu penses",
+        "frenchConjugationsBank": ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent"]
     },
     {
-        frenchInfinitive: "boire",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on boit ",
-        frenchConjugationsBank: ["je bois", "tu bois", "il/elle/on boit", "nous buvons", "vous buvez", "ils/elles boivent" ],
+        "frenchInfinitive": "penser",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on pense",
+        "frenchConjugationsBank": ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent"]
     },
     {
-        frenchInfinitive: "boire",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous buvons ",
-        frenchConjugationsBank: ["je bois", "tu bois", "il/elle/on boit", "nous buvons", "vous buvez", "ils/elles boivent" ],
+        "frenchInfinitive": "penser",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous pensons",
+        "frenchConjugationsBank": ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent"]
     },
     {
-        frenchInfinitive: "boire",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous buvez ",
-        frenchConjugationsBank: ["je bois", "tu bois", "il/elle/on boit", "nous buvons", "vous buvez", "ils/elles boivent" ],
+        "frenchInfinitive": "penser",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous pensez",
+        "frenchConjugationsBank": ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent"]
     },
     {
-        frenchInfinitive: "boire",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles boivent ",
-        frenchConjugationsBank: ["je bois", "tu bois", "il/elle/on boit", "nous buvons", "vous buvez", "ils/elles boivent" ],
+        "frenchInfinitive": "penser",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles pensent",
+        "frenchConjugationsBank": ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent"]
     },
     {
-        frenchInfinitive: "chercher",
-        englishPersonNumber: "I",
-        frenchConjugated: "je cherche ",
-        frenchConjugationsBank: ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent" ],
+        "frenchInfinitive": "préférer",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je préfère",
+        "frenchConjugationsBank": ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent"]
     },
     {
-        frenchInfinitive: "chercher",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu cherches ",
-        frenchConjugationsBank: ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent" ],
+        "frenchInfinitive": "préférer",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu préfères",
+        "frenchConjugationsBank": ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent"]
     },
     {
-        frenchInfinitive: "chercher",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on cherche ",
-        frenchConjugationsBank: ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent" ],
+        "frenchInfinitive": "préférer",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on préfère",
+        "frenchConjugationsBank": ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent"]
     },
     {
-        frenchInfinitive: "chercher",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous cherchons ",
-        frenchConjugationsBank: ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent" ],
+        "frenchInfinitive": "préférer",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous préférons",
+        "frenchConjugationsBank": ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent"]
     },
     {
-        frenchInfinitive: "chercher",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous cherchez ",
-        frenchConjugationsBank: ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent" ],
+        "frenchInfinitive": "préférer",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous préférez",
+        "frenchConjugationsBank": ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent"]
     },
     {
-        frenchInfinitive: "chercher",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles cherchent ",
-        frenchConjugationsBank: ["je cherche", "tu cherches", "il/elle/on cherche", "nous cherchons", "vous cherchez", "ils/elles cherchent" ],
+        "frenchInfinitive": "préférer",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles préfèrent",
+        "frenchConjugationsBank": ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent"]
     },
     {
-        frenchInfinitive: "choisir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je choisis ",
-        frenchConjugationsBank: ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent" ],
+        "frenchInfinitive": "regarder",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je regarde",
+        "frenchConjugationsBank": ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent"]
     },
     {
-        frenchInfinitive: "choisir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu choisis ",
-        frenchConjugationsBank: ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent" ],
+        "frenchInfinitive": "regarder",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu regardes",
+        "frenchConjugationsBank": ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent"]
     },
     {
-        frenchInfinitive: "choisir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on choisit ",
-        frenchConjugationsBank: ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent" ],
+        "frenchInfinitive": "regarder",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on regarde",
+        "frenchConjugationsBank": ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent"]
     },
     {
-        frenchInfinitive: "choisir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous choisissons ",
-        frenchConjugationsBank: ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent" ],
+        "frenchInfinitive": "regarder",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous regardons",
+        "frenchConjugationsBank": ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent"]
     },
     {
-        frenchInfinitive: "choisir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous choisissez ",
-        frenchConjugationsBank: ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent" ],
+        "frenchInfinitive": "regarder",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous regardez",
+        "frenchConjugationsBank": ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent"]
     },
     {
-        frenchInfinitive: "choisir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles choisissent ",
-        frenchConjugationsBank: ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent" ],
+        "frenchInfinitive": "regarder",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles regardent",
+        "frenchConjugationsBank": ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent"]
     },
     {
-        frenchInfinitive: "comprendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je comprends ",
-        frenchConjugationsBank: ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent" ],
+        "frenchInfinitive": "travailler",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je travaille",
+        "frenchConjugationsBank": ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent"]
     },
     {
-        frenchInfinitive: "comprendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu comprends ",
-        frenchConjugationsBank: ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent" ],
+        "frenchInfinitive": "travailler",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu travailles",
+        "frenchConjugationsBank": ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent"]
     },
     {
-        frenchInfinitive: "comprendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on comprend ",
-        frenchConjugationsBank: ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent" ],
+        "frenchInfinitive": "travailler",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on travaille",
+        "frenchConjugationsBank": ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent"]
     },
     {
-        frenchInfinitive: "comprendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous comprenons ",
-        frenchConjugationsBank: ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent" ],
+        "frenchInfinitive": "travailler",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous travaillons",
+        "frenchConjugationsBank": ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent"]
     },
     {
-        frenchInfinitive: "comprendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous comprenez ",
-        frenchConjugationsBank: ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent" ],
+        "frenchInfinitive": "travailler",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous travaillez",
+        "frenchConjugationsBank": ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent"]
     },
     {
-        frenchInfinitive: "comprendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles comprennent ",
-        frenchConjugationsBank: ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent" ],
+        "frenchInfinitive": "travailler",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles travaillent",
+        "frenchConjugationsBank": ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent"]
     },
     {
-        frenchInfinitive: "connaître",
-        englishPersonNumber: "I",
-        frenchConjugated: "je connais ",
-        frenchConjugationsBank: ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent" ],
+        "frenchInfinitive": "choisir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je choisis",
+        "frenchConjugationsBank": ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent"]
     },
     {
-        frenchInfinitive: "connaître",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu connais ",
-        frenchConjugationsBank: ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent" ],
+        "frenchInfinitive": "choisir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu choisis",
+        "frenchConjugationsBank": ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent"]
     },
     {
-        frenchInfinitive: "connaître",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on connaît ",
-        frenchConjugationsBank: ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent" ],
+        "frenchInfinitive": "choisir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on choisit",
+        "frenchConjugationsBank": ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent"]
     },
     {
-        frenchInfinitive: "connaître",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous connaissons ",
-        frenchConjugationsBank: ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent" ],
+        "frenchInfinitive": "choisir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous choisissons",
+        "frenchConjugationsBank": ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent"]
     },
     {
-        frenchInfinitive: "connaître",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous connaissez ",
-        frenchConjugationsBank: ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent" ],
+        "frenchInfinitive": "choisir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous choisissez",
+        "frenchConjugationsBank": ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent"]
     },
     {
-        frenchInfinitive: "connaître",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles connaissent ",
-        frenchConjugationsBank: ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent" ],
+        "frenchInfinitive": "choisir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles choisissent",
+        "frenchConjugationsBank": ["je choisis", "tu choisis", "il/elle/on choisit", "nous choisissons", "vous choisissez", "ils/elles choisissent"]
     },
     {
-        frenchInfinitive: "défendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je défends ",
-        frenchConjugationsBank: ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent" ],
+        "frenchInfinitive": "dormir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je dors",
+        "frenchConjugationsBank": ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment"]
     },
     {
-        frenchInfinitive: "défendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu défends ",
-        frenchConjugationsBank: ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent" ],
+        "frenchInfinitive": "dormir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu dors",
+        "frenchConjugationsBank": ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment"]
     },
     {
-        frenchInfinitive: "défendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on défend ",
-        frenchConjugationsBank: ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent" ],
+        "frenchInfinitive": "dormir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on dort",
+        "frenchConjugationsBank": ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment"]
     },
     {
-        frenchInfinitive: "défendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous défendons ",
-        frenchConjugationsBank: ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent" ],
+        "frenchInfinitive": "dormir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous dormons",
+        "frenchConjugationsBank": ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment"]
     },
     {
-        frenchInfinitive: "défendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous défendez ",
-        frenchConjugationsBank: ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent" ],
+        "frenchInfinitive": "dormir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous dormez",
+        "frenchConjugationsBank": ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment"]
     },
     {
-        frenchInfinitive: "défendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles défendent ",
-        frenchConjugationsBank: ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent" ],
+        "frenchInfinitive": "dormir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles dorment",
+        "frenchConjugationsBank": ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment"]
     },
     {
-        frenchInfinitive: "dépendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je dépends ",
-        frenchConjugationsBank: ["je dépends", "tu dépends", "il/elle/on dépend", "nous dépendons", "vous dépendez", "ils/elles dépendent" ],
+        "frenchInfinitive": "finir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je finis",
+        "frenchConjugationsBank": ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent"]
     },
     {
-        frenchInfinitive: "dépendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu dépends ",
-        frenchConjugationsBank: ["je dépends", "tu dépends", "il/elle/on dépend", "nous dépendons", "vous dépendez", "ils/elles dépendent" ],
+        "frenchInfinitive": "finir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu finis",
+        "frenchConjugationsBank": ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent"]
     },
     {
-        frenchInfinitive: "dépendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on dépend ",
-        frenchConjugationsBank: ["je dépends", "tu dépends", "il/elle/on dépend", "nous dépendons", "vous dépendez", "ils/elles dépendent" ],
+        "frenchInfinitive": "finir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on finit",
+        "frenchConjugationsBank": ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent"]
     },
     {
-        frenchInfinitive: "dépendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous dépendons ",
-        frenchConjugationsBank: ["je dépends", "tu dépends", "il/elle/on dépend", "nous dépendons", "vous dépendez", "ils/elles dépendent" ],
+        "frenchInfinitive": "finir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous finissons",
+        "frenchConjugationsBank": ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent"]
     },
     {
-        frenchInfinitive: "dépendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous dépendez ",
-        frenchConjugationsBank: ["je dépends", "tu dépends", "il/elle/on dépend", "nous dépendons", "vous dépendez", "ils/elles dépendent" ],
+        "frenchInfinitive": "finir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous finissez",
+        "frenchConjugationsBank": ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent"]
     },
     {
-        frenchInfinitive: "dépendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles dépendent ",
-        frenchConjugationsBank: ["je dépends", "tu dépends", "il/elle/on dépend", "nous dépendons", "vous dépendez", "ils/elles dépendent" ],
+        "frenchInfinitive": "finir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles finissent",
+        "frenchConjugationsBank": ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent"]
     },
     {
-        frenchInfinitive: "descendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je descends ",
-        frenchConjugationsBank: ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent" ],
+        "frenchInfinitive": "grandir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je grandis",
+        "frenchConjugationsBank": ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent"]
     },
     {
-        frenchInfinitive: "descendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu descends ",
-        frenchConjugationsBank: ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent" ],
+        "frenchInfinitive": "grandir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu grandis",
+        "frenchConjugationsBank": ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent"]
     },
     {
-        frenchInfinitive: "descendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on descend ",
-        frenchConjugationsBank: ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent" ],
+        "frenchInfinitive": "grandir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on grandit",
+        "frenchConjugationsBank": ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent"]
     },
     {
-        frenchInfinitive: "descendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous descendons ",
-        frenchConjugationsBank: ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent" ],
+        "frenchInfinitive": "grandir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous grandissons",
+        "frenchConjugationsBank": ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent"]
     },
     {
-        frenchInfinitive: "descendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous descendez ",
-        frenchConjugationsBank: ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent" ],
+        "frenchInfinitive": "grandir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous grandissez",
+        "frenchConjugationsBank": ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent"]
     },
     {
-        frenchInfinitive: "descendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles descendent ",
-        frenchConjugationsBank: ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent" ],
+        "frenchInfinitive": "grandir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles grandissent",
+        "frenchConjugationsBank": ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent"]
     },
     {
-        frenchInfinitive: "donner",
-        englishPersonNumber: "I",
-        frenchConjugated: "je donne ",
-        frenchConjugationsBank: ["je donne", "tu donnes", "il/elle/on donne", "nous donnons", "vous donnez", "ils/elles donnent" ],
+        "frenchInfinitive": "partir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je pars",
+        "frenchConjugationsBank": ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent"]
     },
     {
-        frenchInfinitive: "donner",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu donnes ",
-        frenchConjugationsBank: ["je donne", "tu donnes", "il/elle/on donne", "nous donnons", "vous donnez", "ils/elles donnent" ],
+        "frenchInfinitive": "partir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu pars",
+        "frenchConjugationsBank": ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent"]
     },
     {
-        frenchInfinitive: "donner",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on donne ",
-        frenchConjugationsBank: ["je donne", "tu donnes", "il/elle/on donne", "nous donnons", "vous donnez", "ils/elles donnent" ],
+        "frenchInfinitive": "partir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on part",
+        "frenchConjugationsBank": ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent"]
     },
     {
-        frenchInfinitive: "donner",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous donnons ",
-        frenchConjugationsBank: ["je donne", "tu donnes", "il/elle/on donne", "nous donnons", "vous donnez", "ils/elles donnent" ],
+        "frenchInfinitive": "partir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous partons",
+        "frenchConjugationsBank": ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent"]
     },
     {
-        frenchInfinitive: "donner",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous donnez ",
-        frenchConjugationsBank: ["je donne", "tu donnes", "il/elle/on donne", "nous donnons", "vous donnez", "ils/elles donnent" ],
+        "frenchInfinitive": "partir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous partez",
+        "frenchConjugationsBank": ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent"]
     },
     {
-        frenchInfinitive: "donner",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles donnent ",
-        frenchConjugationsBank: ["je donne", "tu donnes", "il/elle/on donne", "nous donnons", "vous donnez", "ils/elles donnent" ],
+        "frenchInfinitive": "partir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles partent",
+        "frenchConjugationsBank": ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent"]
     },
     {
-        frenchInfinitive: "dormir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je dors ",
-        frenchConjugationsBank: ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment" ],
+        "frenchInfinitive": "réfléchir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je réfléchis",
+        "frenchConjugationsBank": ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent"]
     },
     {
-        frenchInfinitive: "dormir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu dors ",
-        frenchConjugationsBank: ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment" ],
+        "frenchInfinitive": "réfléchir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu réfléchis",
+        "frenchConjugationsBank": ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent"]
     },
     {
-        frenchInfinitive: "dormir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on dort ",
-        frenchConjugationsBank: ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment" ],
+        "frenchInfinitive": "réfléchir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on réfléchit",
+        "frenchConjugationsBank": ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent"]
     },
     {
-        frenchInfinitive: "dormir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous dormons ",
-        frenchConjugationsBank: ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment" ],
+        "frenchInfinitive": "réfléchir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous réfléchissons",
+        "frenchConjugationsBank": ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent"]
     },
     {
-        frenchInfinitive: "dormir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous dormez ",
-        frenchConjugationsBank: ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment" ],
+        "frenchInfinitive": "réfléchir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous réfléchissez",
+        "frenchConjugationsBank": ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent"]
     },
     {
-        frenchInfinitive: "dormir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles dorment ",
-        frenchConjugationsBank: ["je dors", "tu dors", "il/elle/on dort", "nous dormons", "vous dormez", "ils/elles dorment" ],
+        "frenchInfinitive": "réfléchir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles réfléchissent",
+        "frenchConjugationsBank": ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent"]
     },
     {
-        frenchInfinitive: "écouter",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'écoute ",
-        frenchConjugationsBank: ["j'écoute", "tu écoutes", "il/elle/on écoute", "nous écoutons", "vous écoutez", "ils/elles écoutent" ],
+        "frenchInfinitive": "réussir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je réussis",
+        "frenchConjugationsBank": ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent"]
     },
     {
-        frenchInfinitive: "écouter",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu écoutes ",
-        frenchConjugationsBank: ["j'écoute", "tu écoutes", "il/elle/on écoute", "nous écoutons", "vous écoutez", "ils/elles écoutent" ],
+        "frenchInfinitive": "réussir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu réussis",
+        "frenchConjugationsBank": ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent"]
     },
     {
-        frenchInfinitive: "écouter",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on écoute ",
-        frenchConjugationsBank: ["j'écoute", "tu écoutes", "il/elle/on écoute", "nous écoutons", "vous écoutez", "ils/elles écoutent" ],
+        "frenchInfinitive": "réussir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on réussit",
+        "frenchConjugationsBank": ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent"]
     },
     {
-        frenchInfinitive: "écouter",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous écoutons ",
-        frenchConjugationsBank: ["j'écoute", "tu écoutes", "il/elle/on écoute", "nous écoutons", "vous écoutez", "ils/elles écoutent" ],
+        "frenchInfinitive": "réussir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous réussissons",
+        "frenchConjugationsBank": ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent"]
     },
     {
-        frenchInfinitive: "écouter",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous écoutez ",
-        frenchConjugationsBank: ["j'écoute", "tu écoutes", "il/elle/on écoute", "nous écoutons", "vous écoutez", "ils/elles écoutent" ],
+        "frenchInfinitive": "réussir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous réussissez",
+        "frenchConjugationsBank": ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent"]
     },
     {
-        frenchInfinitive: "écouter",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles écoutent ",
-        frenchConjugationsBank: ["j'écoute", "tu écoutes", "il/elle/on écoute", "nous écoutons", "vous écoutez", "ils/elles écoutent" ],
+        "frenchInfinitive": "réussir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles réussissent",
+        "frenchConjugationsBank": ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent"]
     },
     {
-        frenchInfinitive: "entendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'entends ",
-        frenchConjugationsBank: ["j'entends", "tu entends", "il/elle/on entend", "nous entendons", "vous entendez", "ils/elles entendent" ],
+        "frenchInfinitive": "servir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je sers",
+        "frenchConjugationsBank": ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent"]
     },
     {
-        frenchInfinitive: "entendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu entends ",
-        frenchConjugationsBank: ["j'entends", "tu entends", "il/elle/on entend", "nous entendons", "vous entendez", "ils/elles entendent" ],
+        "frenchInfinitive": "servir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu sers",
+        "frenchConjugationsBank": ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent"]
     },
     {
-        frenchInfinitive: "entendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on entend ",
-        frenchConjugationsBank: ["j'entends", "tu entends", "il/elle/on entend", "nous entendons", "vous entendez", "ils/elles entendent" ],
+        "frenchInfinitive": "servir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on sert",
+        "frenchConjugationsBank": ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent"]
     },
     {
-        frenchInfinitive: "entendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous entendons ",
-        frenchConjugationsBank: ["j'entends", "tu entends", "il/elle/on entend", "nous entendons", "vous entendez", "ils/elles entendent" ],
+        "frenchInfinitive": "servir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous servons",
+        "frenchConjugationsBank": ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent"]
     },
     {
-        frenchInfinitive: "entendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous entendez ",
-        frenchConjugationsBank: ["j'entends", "tu entends", "il/elle/on entend", "nous entendons", "vous entendez", "ils/elles entendent" ],
+        "frenchInfinitive": "servir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous servez",
+        "frenchConjugationsBank": ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent"]
     },
     {
-        frenchInfinitive: "entendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles entendent ",
-        frenchConjugationsBank: ["j'entends", "tu entends", "il/elle/on entend", "nous entendons", "vous entendez", "ils/elles entendent" ],
+        "frenchInfinitive": "servir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles servent",
+        "frenchConjugationsBank": ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent"]
     },
     {
-        frenchInfinitive: "étudier",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'étudie ",
-        frenchConjugationsBank: ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient" ],
+        "frenchInfinitive": "sortir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je sors",
+        "frenchConjugationsBank": ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent"]
     },
     {
-        frenchInfinitive: "étudier",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu étudies ",
-        frenchConjugationsBank: ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient" ],
+        "frenchInfinitive": "sortir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu sors",
+        "frenchConjugationsBank": ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent"]
     },
     {
-        frenchInfinitive: "étudier",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on étudie ",
-        frenchConjugationsBank: ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient" ],
+        "frenchInfinitive": "sortir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on sort",
+        "frenchConjugationsBank": ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent"]
     },
     {
-        frenchInfinitive: "étudier",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous étudions ",
-        frenchConjugationsBank: ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient" ],
+        "frenchInfinitive": "sortir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous sortons",
+        "frenchConjugationsBank": ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent"]
     },
     {
-        frenchInfinitive: "étudier",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous étudiez ",
-        frenchConjugationsBank: ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient" ],
+        "frenchInfinitive": "sortir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous sortez",
+        "frenchConjugationsBank": ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent"]
     },
     {
-        frenchInfinitive: "étudier",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles étudient ",
-        frenchConjugationsBank: ["j'étudie", "tu étudies", "il/elle/on étudie", "nous étudions", "vous étudiez", "ils/elles étudient" ],
+        "frenchInfinitive": "sortir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles sortent",
+        "frenchConjugationsBank": ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent"]
     },
     {
-        frenchInfinitive: "finir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je finis ",
-        frenchConjugationsBank: ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent" ],
+        "frenchInfinitive": "venir",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je viens",
+        "frenchConjugationsBank": ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent"]
     },
     {
-        frenchInfinitive: "finir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu finis ",
-        frenchConjugationsBank: ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent" ],
+        "frenchInfinitive": "venir",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu viens",
+        "frenchConjugationsBank": ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent"]
     },
     {
-        frenchInfinitive: "finir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on finit ",
-        frenchConjugationsBank: ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent" ],
+        "frenchInfinitive": "venir",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on vient",
+        "frenchConjugationsBank": ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent"]
     },
     {
-        frenchInfinitive: "finir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous finissons ",
-        frenchConjugationsBank: ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent" ],
+        "frenchInfinitive": "venir",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous venons",
+        "frenchConjugationsBank": ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent"]
     },
     {
-        frenchInfinitive: "finir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous finissez ",
-        frenchConjugationsBank: ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent" ],
+        "frenchInfinitive": "venir",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous venez",
+        "frenchConjugationsBank": ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent"]
     },
     {
-        frenchInfinitive: "finir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles finissent ",
-        frenchConjugationsBank: ["je finis", "tu finis", "il/elle/on finit", "nous finissons", "vous finissez", "ils/elles finissent" ],
+        "frenchInfinitive": "venir",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles viennent",
+        "frenchConjugationsBank": ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent"]
     },
     {
-        frenchInfinitive: "grandir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je grandis ",
-        frenchConjugationsBank: ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "j'apprends",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "grandir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu grandis ",
-        frenchConjugationsBank: ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu apprends",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "grandir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on grandit ",
-        frenchConjugationsBank: ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on apprend",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "grandir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous grandissons ",
-        frenchConjugationsBank: ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous apprenons",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "grandir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous grandissez ",
-        frenchConjugationsBank: ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous apprenez",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "grandir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles grandissent ",
-        frenchConjugationsBank: ["je grandis", "tu grandis", "il/elle/on grandit", "nous grandissons", "vous grandissez", "ils/elles grandissent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles apprennent",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "habiter",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'habite ",
-        frenchConjugationsBank: ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je comprends",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "habiter",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu habites ",
-        frenchConjugationsBank: ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu comprends",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "habiter",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on habite ",
-        frenchConjugationsBank: ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on comprend",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "habiter",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous habitons ",
-        frenchConjugationsBank: ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous comprenons",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "habiter",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous habitez ",
-        frenchConjugationsBank: ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous comprenez",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "habiter",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles habitent ",
-        frenchConjugationsBank: ["j'habite", "tu habites", "il/elle/on habite", "nous habitons", "vous habitez", "ils/elles habitent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles comprennent",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "manger",
-        englishPersonNumber: "I",
-        frenchConjugated: "je mange ",
-        frenchConjugationsBank: ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je connais",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "manger",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu manges ",
-        frenchConjugationsBank: ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu connais",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "manger",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on mange ",
-        frenchConjugationsBank: ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on connaît",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "manger",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous mangeons ",
-        frenchConjugationsBank: ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous connaissons",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "manger",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous mangez ",
-        frenchConjugationsBank: ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous connaissez",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "manger",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles mangent ",
-        frenchConjugationsBank: ["je mange", "tu manges", "il/elle/on mange", "nous mangeons", "vous mangez", "ils/elles mangent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles connaissent",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "mettre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je mets ",
-        frenchConjugationsBank: ["je mets", "tu mets", "il/elle/on met", "nous mettons", "vous mettez", "ils/elles mettent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je défends",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "mettre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu mets ",
-        frenchConjugationsBank: ["je mets", "tu mets", "il/elle/on met", "nous mettons", "vous mettez", "ils/elles mettent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu défends",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "mettre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on met ",
-        frenchConjugationsBank: ["je mets", "tu mets", "il/elle/on met", "nous mettons", "vous mettez", "ils/elles mettent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on défend",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "mettre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous mettons ",
-        frenchConjugationsBank: ["je mets", "tu mets", "il/elle/on met", "nous mettons", "vous mettez", "ils/elles mettent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous défendons",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "mettre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous mettez ",
-        frenchConjugationsBank: ["je mets", "tu mets", "il/elle/on met", "nous mettons", "vous mettez", "ils/elles mettent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous défendez",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "mettre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles mettent ",
-        frenchConjugationsBank: ["je mets", "tu mets", "il/elle/on met", "nous mettons", "vous mettez", "ils/elles mettent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles défendent",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "obéir",
-        englishPersonNumber: "I",
-        frenchConjugated: "j'obéis ",
-        frenchConjugationsBank: ["j'obéis", "tu obéis", "il/elle/on obéit", "nous obéissons", "vous obéissez", "ils/elles obéissent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je descends",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "obéir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu obéis ",
-        frenchConjugationsBank: ["j'obéis", "tu obéis", "il/elle/on obéit", "nous obéissons", "vous obéissez", "ils/elles obéissent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu descends",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "obéir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on obéit ",
-        frenchConjugationsBank: ["j'obéis", "tu obéis", "il/elle/on obéit", "nous obéissons", "vous obéissez", "ils/elles obéissent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on descend",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "obéir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous obéissons ",
-        frenchConjugationsBank: ["j'obéis", "tu obéis", "il/elle/on obéit", "nous obéissons", "vous obéissez", "ils/elles obéissent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous descendons",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "obéir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous obéissez ",
-        frenchConjugationsBank: ["j'obéis", "tu obéis", "il/elle/on obéit", "nous obéissons", "vous obéissez", "ils/elles obéissent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous descendez",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "obéir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles obéissent ",
-        frenchConjugationsBank: ["j'obéis", "tu obéis", "il/elle/on obéit", "nous obéissons", "vous obéissez", "ils/elles obéissent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles descendent",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "parler",
-        englishPersonNumber: "I",
-        frenchConjugated: "je parle ",
-        frenchConjugationsBank: ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "j'apprends",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "parler",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu parles ",
-        frenchConjugationsBank: ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu apprends",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "parler",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on parle ",
-        frenchConjugationsBank: ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on apprend",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "parler",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous parlons ",
-        frenchConjugationsBank: ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous apprenons",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "parler",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous parlez ",
-        frenchConjugationsBank: ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous apprenez",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "parler",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles parlent ",
-        frenchConjugationsBank: ["je parle", "tu parles", "il/elle/on parle", "nous parlons", "vous parlez", "ils/elles parlent" ],
+        "frenchInfinitive": "apprendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles apprennent",
+        "frenchConjugationsBank": ["j'apprends", "tu apprends", "il/elle/on apprend", "nous apprenons", "vous apprenez", "ils/elles apprennent"]
     },
     {
-        frenchInfinitive: "partir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je pars ",
-        frenchConjugationsBank: ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je comprends",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "partir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu pars ",
-        frenchConjugationsBank: ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu comprends",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "partir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on part ",
-        frenchConjugationsBank: ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on comprend",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "partir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous partons ",
-        frenchConjugationsBank: ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous comprenons",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "partir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous partez ",
-        frenchConjugationsBank: ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous comprenez",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "partir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles partent ",
-        frenchConjugationsBank: ["je pars", "tu pars", "il/elle/on part", "nous partons", "vous partez", "ils/elles partent" ],
+        "frenchInfinitive": "comprendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles comprennent",
+        "frenchConjugationsBank": ["je comprends", "tu comprends", "il/elle/on comprend", "nous comprenons", "vous comprenez", "ils/elles comprennent"]
     },
     {
-        frenchInfinitive: "penser",
-        englishPersonNumber: "I",
-        frenchConjugated: "je pense ",
-        frenchConjugationsBank: ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je connais",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "penser",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu penses ",
-        frenchConjugationsBank: ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu connais",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "penser",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on pense ",
-        frenchConjugationsBank: ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on connaît",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "penser",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous pensons ",
-        frenchConjugationsBank: ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous connaissons",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "penser",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous pensez ",
-        frenchConjugationsBank: ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous connaissez",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "penser",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles pensent ",
-        frenchConjugationsBank: ["je pense", "tu penses", "il/elle/on pense", "nous pensons", "vous pensez", "ils/elles pensent" ],
+        "frenchInfinitive": "connaître",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles connaissent",
+        "frenchConjugationsBank": ["je connais", "tu connais", "il/elle/on connaît", "nous connaissons", "vous connaissez", "ils/elles connaissent"]
     },
     {
-        frenchInfinitive: "perdre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je perds ",
-        frenchConjugationsBank: ["je perds", "tu perds", "il/elle/on perd", "nous perdons", "vous perdez", "ils/elles perdent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je défends",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "perdre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu perds ",
-        frenchConjugationsBank: ["je perds", "tu perds", "il/elle/on perd", "nous perdons", "vous perdez", "ils/elles perdent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu défends",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "perdre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on perd ",
-        frenchConjugationsBank: ["je perds", "tu perds", "il/elle/on perd", "nous perdons", "vous perdez", "ils/elles perdent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on défend",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "perdre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous perdons ",
-        frenchConjugationsBank: ["je perds", "tu perds", "il/elle/on perd", "nous perdons", "vous perdez", "ils/elles perdent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous défendons",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "perdre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous perdez ",
-        frenchConjugationsBank: ["je perds", "tu perds", "il/elle/on perd", "nous perdons", "vous perdez", "ils/elles perdent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous défendez",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "perdre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles perdent ",
-        frenchConjugationsBank: ["je perds", "tu perds", "il/elle/on perd", "nous perdons", "vous perdez", "ils/elles perdent" ],
+        "frenchInfinitive": "défendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles défendent",
+        "frenchConjugationsBank": ["je défends", "tu défends", "il/elle/on défend", "nous défendons", "vous défendez", "ils/elles défendent"]
     },
     {
-        frenchInfinitive: "préférer",
-        englishPersonNumber: "I",
-        frenchConjugated: "je préfère ",
-        frenchConjugationsBank: ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "I",
+        "frenchConjugated": "je descends",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "préférer",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu préfères ",
-        frenchConjugationsBank: ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "you (singular, familiar)",
+        "frenchConjugated": "tu descends",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "préférer",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on préfère ",
-        frenchConjugationsBank: ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "he/she/one",
+        "frenchConjugated": "il/elle/on descend",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "préférer",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous préférons ",
-        frenchConjugationsBank: ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "we",
+        "frenchConjugated": "nous descendons",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "préférer",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous préférez ",
-        frenchConjugationsBank: ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "you (singular formal or plural)",
+        "frenchConjugated": "vous descendez",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
     {
-        frenchInfinitive: "préférer",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles préfèrent ",
-        frenchConjugationsBank: ["je préfère", "tu préfères", "il/elle/on préfère", "nous préférons", "vous préférez", "ils/elles préfèrent" ],
-    },
-    {
-        frenchInfinitive: "prendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je prends ",
-        frenchConjugationsBank: ["je prends", "tu prends", "il/elle/on prend", "nous prenons", "vous prenez", "ils/elles prennent" ],
-    },
-    {
-        frenchInfinitive: "prendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu prends ",
-        frenchConjugationsBank: ["je prends", "tu prends", "il/elle/on prend", "nous prenons", "vous prenez", "ils/elles prennent" ],
-    },
-    {
-        frenchInfinitive: "prendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on prend ",
-        frenchConjugationsBank: ["je prends", "tu prends", "il/elle/on prend", "nous prenons", "vous prenez", "ils/elles prennent" ],
-    },
-    {
-        frenchInfinitive: "prendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous prenons ",
-        frenchConjugationsBank: ["je prends", "tu prends", "il/elle/on prend", "nous prenons", "vous prenez", "ils/elles prennent" ],
-    },
-    {
-        frenchInfinitive: "prendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous prenez ",
-        frenchConjugationsBank: ["je prends", "tu prends", "il/elle/on prend", "nous prenons", "vous prenez", "ils/elles prennent" ],
-    },
-    {
-        frenchInfinitive: "prendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles prennent ",
-        frenchConjugationsBank: ["je prends", "tu prends", "il/elle/on prend", "nous prenons", "vous prenez", "ils/elles prennent" ],
-    },
-    {
-        frenchInfinitive: "réagir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je réagis ",
-        frenchConjugationsBank: ["je réagis", "tu réagis", "il/elle/on réagit", "nous réagissons", "vous réagissez", "ils/elles réagissent" ],
-    },
-    {
-        frenchInfinitive: "réagir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu réagis ",
-        frenchConjugationsBank: ["je réagis", "tu réagis", "il/elle/on réagit", "nous réagissons", "vous réagissez", "ils/elles réagissent" ],
-    },
-    {
-        frenchInfinitive: "réagir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on réagit ",
-        frenchConjugationsBank: ["je réagis", "tu réagis", "il/elle/on réagit", "nous réagissons", "vous réagissez", "ils/elles réagissent" ],
-    },
-    {
-        frenchInfinitive: "réagir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous réagissons ",
-        frenchConjugationsBank: ["je réagis", "tu réagis", "il/elle/on réagit", "nous réagissons", "vous réagissez", "ils/elles réagissent" ],
-    },
-    {
-        frenchInfinitive: "réagir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous réagissez ",
-        frenchConjugationsBank: ["je réagis", "tu réagis", "il/elle/on réagit", "nous réagissons", "vous réagissez", "ils/elles réagissent" ],
-    },
-    {
-        frenchInfinitive: "réagir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles réagissent ",
-        frenchConjugationsBank: ["je réagis", "tu réagis", "il/elle/on réagit", "nous réagissons", "vous réagissez", "ils/elles réagissent" ],
-    },
-    {
-        frenchInfinitive: "réfléchir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je réfléchis ",
-        frenchConjugationsBank: ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent" ],
-    },
-    {
-        frenchInfinitive: "réfléchir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu réfléchis ",
-        frenchConjugationsBank: ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent" ],
-    },
-    {
-        frenchInfinitive: "réfléchir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on réfléchit ",
-        frenchConjugationsBank: ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent" ],
-    },
-    {
-        frenchInfinitive: "réfléchir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous réfléchissons ",
-        frenchConjugationsBank: ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent" ],
-    },
-    {
-        frenchInfinitive: "réfléchir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous réfléchissez ",
-        frenchConjugationsBank: ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent" ],
-    },
-    {
-        frenchInfinitive: "réfléchir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles réfléchissent ",
-        frenchConjugationsBank: ["je réfléchis", "tu réfléchis", "il/elle/on réfléchit", "nous réfléchissons", "vous réfléchissez", "ils/elles réfléchissent" ],
-    },
-    {
-        frenchInfinitive: "regarder",
-        englishPersonNumber: "I",
-        frenchConjugated: "je regarde ",
-        frenchConjugationsBank: ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent" ],
-    },
-    {
-        frenchInfinitive: "regarder",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu regardes ",
-        frenchConjugationsBank: ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent" ],
-    },
-    {
-        frenchInfinitive: "regarder",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on regarde ",
-        frenchConjugationsBank: ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent" ],
-    },
-    {
-        frenchInfinitive: "regarder",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous regardons ",
-        frenchConjugationsBank: ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent" ],
-    },
-    {
-        frenchInfinitive: "regarder",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous regardez ",
-        frenchConjugationsBank: ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent" ],
-    },
-    {
-        frenchInfinitive: "regarder",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles regardent ",
-        frenchConjugationsBank: ["je regarde", "tu regardes", "il/elle/on regarde", "nous regardons", "vous regardez", "ils/elles regardent" ],
-    },
-    {
-        frenchInfinitive: "rendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je rends ",
-        frenchConjugationsBank: ["je rends", "tu rends", "il/elle/on rend", "nous rendons", "vous rendez", "ils/elles rendent" ],
-    },
-    {
-        frenchInfinitive: "rendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu rends ",
-        frenchConjugationsBank: ["je rends", "tu rends", "il/elle/on rend", "nous rendons", "vous rendez", "ils/elles rendent" ],
-    },
-    {
-        frenchInfinitive: "rendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on rend ",
-        frenchConjugationsBank: ["je rends", "tu rends", "il/elle/on rend", "nous rendons", "vous rendez", "ils/elles rendent" ],
-    },
-    {
-        frenchInfinitive: "rendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous rendons ",
-        frenchConjugationsBank: ["je rends", "tu rends", "il/elle/on rend", "nous rendons", "vous rendez", "ils/elles rendent" ],
-    },
-    {
-        frenchInfinitive: "rendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous rendez ",
-        frenchConjugationsBank: ["je rends", "tu rends", "il/elle/on rend", "nous rendons", "vous rendez", "ils/elles rendent" ],
-    },
-    {
-        frenchInfinitive: "rendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles rendent ",
-        frenchConjugationsBank: ["je rends", "tu rends", "il/elle/on rend", "nous rendons", "vous rendez", "ils/elles rendent" ],
-    },
-    {
-        frenchInfinitive: "répondre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je réponds ",
-        frenchConjugationsBank: ["je réponds", "tu réponds", "il/elle/on répond", "nous répondons", "vous répondez", "ils/elles répondent" ],
-    },
-    {
-        frenchInfinitive: "répondre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu réponds ",
-        frenchConjugationsBank: ["je réponds", "tu réponds", "il/elle/on répond", "nous répondons", "vous répondez", "ils/elles répondent" ],
-    },
-    {
-        frenchInfinitive: "répondre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on répond ",
-        frenchConjugationsBank: ["je réponds", "tu réponds", "il/elle/on répond", "nous répondons", "vous répondez", "ils/elles répondent" ],
-    },
-    {
-        frenchInfinitive: "répondre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous répondons ",
-        frenchConjugationsBank: ["je réponds", "tu réponds", "il/elle/on répond", "nous répondons", "vous répondez", "ils/elles répondent" ],
-    },
-    {
-        frenchInfinitive: "répondre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous répondez ",
-        frenchConjugationsBank: ["je réponds", "tu réponds", "il/elle/on répond", "nous répondons", "vous répondez", "ils/elles répondent" ],
-    },
-    {
-        frenchInfinitive: "répondre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles répondent ",
-        frenchConjugationsBank: ["je réponds", "tu réponds", "il/elle/on répond", "nous répondons", "vous répondez", "ils/elles répondent" ],
-    },
-    {
-        frenchInfinitive: "réussir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je réussis ",
-        frenchConjugationsBank: ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent" ],
-    },
-    {
-        frenchInfinitive: "réussir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu réussis ",
-        frenchConjugationsBank: ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent" ],
-    },
-    {
-        frenchInfinitive: "réussir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on réussit ",
-        frenchConjugationsBank: ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent" ],
-    },
-    {
-        frenchInfinitive: "réussir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous réussissons ",
-        frenchConjugationsBank: ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent" ],
-    },
-    {
-        frenchInfinitive: "réussir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous réussissez ",
-        frenchConjugationsBank: ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent" ],
-    },
-    {
-        frenchInfinitive: "réussir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles réussissent ",
-        frenchConjugationsBank: ["je réussis", "tu réussis", "il/elle/on réussit", "nous réussissons", "vous réussissez", "ils/elles réussissent" ],
-    },
-    {
-        frenchInfinitive: "rougir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je rougis ",
-        frenchConjugationsBank: ["je rougis", "tu rougis", "il/elle/on rougit", "nous rougissons", "vous rougissez", "ils/elles rougissent" ],
-    },
-    {
-        frenchInfinitive: "rougir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu rougis ",
-        frenchConjugationsBank: ["je rougis", "tu rougis", "il/elle/on rougit", "nous rougissons", "vous rougissez", "ils/elles rougissent" ],
-    },
-    {
-        frenchInfinitive: "rougir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on rougit ",
-        frenchConjugationsBank: ["je rougis", "tu rougis", "il/elle/on rougit", "nous rougissons", "vous rougissez", "ils/elles rougissent" ],
-    },
-    {
-        frenchInfinitive: "rougir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous rougissons ",
-        frenchConjugationsBank: ["je rougis", "tu rougis", "il/elle/on rougit", "nous rougissons", "vous rougissez", "ils/elles rougissent" ],
-    },
-    {
-        frenchInfinitive: "rougir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous rougissez ",
-        frenchConjugationsBank: ["je rougis", "tu rougis", "il/elle/on rougit", "nous rougissons", "vous rougissez", "ils/elles rougissent" ],
-    },
-    {
-        frenchInfinitive: "rougir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles rougissent ",
-        frenchConjugationsBank: ["je rougis", "tu rougis", "il/elle/on rougit", "nous rougissons", "vous rougissez", "ils/elles rougissent" ],
-    },
-    {
-        frenchInfinitive: "servir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je sers ",
-        frenchConjugationsBank: ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent" ],
-    },
-    {
-        frenchInfinitive: "servir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu sers ",
-        frenchConjugationsBank: ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent" ],
-    },
-    {
-        frenchInfinitive: "servir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on sert ",
-        frenchConjugationsBank: ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent" ],
-    },
-    {
-        frenchInfinitive: "servir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous servons ",
-        frenchConjugationsBank: ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent" ],
-    },
-    {
-        frenchInfinitive: "servir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous servez ",
-        frenchConjugationsBank: ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent" ],
-    },
-    {
-        frenchInfinitive: "servir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles servent ",
-        frenchConjugationsBank: ["je sers", "tu sers", "il/elle/on sert", "nous servons", "vous servez", "ils/elles servent" ],
-    },
-    {
-        frenchInfinitive: "sortir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je sors ",
-        frenchConjugationsBank: ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent" ],
-    },
-    {
-        frenchInfinitive: "sortir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu sors ",
-        frenchConjugationsBank: ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent" ],
-    },
-    {
-        frenchInfinitive: "sortir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on sort ",
-        frenchConjugationsBank: ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent" ],
-    },
-    {
-        frenchInfinitive: "sortir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous sortons ",
-        frenchConjugationsBank: ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent" ],
-    },
-    {
-        frenchInfinitive: "sortir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous sortez ",
-        frenchConjugationsBank: ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent" ],
-    },
-    {
-        frenchInfinitive: "sortir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles sortent ",
-        frenchConjugationsBank: ["je sors", "tu sors", "il/elle/on sort", "nous sortons", "vous sortez", "ils/elles sortent" ],
-    },
-    {
-        frenchInfinitive: "travailler",
-        englishPersonNumber: "I",
-        frenchConjugated: "je travaille ",
-        frenchConjugationsBank: ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent" ],
-    },
-    {
-        frenchInfinitive: "travailler",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu travailles ",
-        frenchConjugationsBank: ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent" ],
-    },
-    {
-        frenchInfinitive: "travailler",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on travaille ",
-        frenchConjugationsBank: ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent" ],
-    },
-    {
-        frenchInfinitive: "travailler",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous travaillons ",
-        frenchConjugationsBank: ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent" ],
-    },
-    {
-        frenchInfinitive: "travailler",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous travaillez ",
-        frenchConjugationsBank: ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent" ],
-    },
-    {
-        frenchInfinitive: "travailler",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles travaillent ",
-        frenchConjugationsBank: ["je travaille", "tu travailles", "il/elle/on travaille", "nous travaillons", "vous travaillez", "ils/elles travaillent" ],
-    },
-    {
-        frenchInfinitive: "vendre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je vends ",
-        frenchConjugationsBank: ["je vends", "tu vends", "il/elle/on vend", "nous vendons", "vous vendez", "ils/elles vendent" ],
-    },
-    {
-        frenchInfinitive: "vendre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu vends ",
-        frenchConjugationsBank: ["je vends", "tu vends", "il/elle/on vend", "nous vendons", "vous vendez", "ils/elles vendent" ],
-    },
-    {
-        frenchInfinitive: "vendre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on vend ",
-        frenchConjugationsBank: ["je vends", "tu vends", "il/elle/on vend", "nous vendons", "vous vendez", "ils/elles vendent" ],
-    },
-    {
-        frenchInfinitive: "vendre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous vendons ",
-        frenchConjugationsBank: ["je vends", "tu vends", "il/elle/on vend", "nous vendons", "vous vendez", "ils/elles vendent" ],
-    },
-    {
-        frenchInfinitive: "vendre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous vendez ",
-        frenchConjugationsBank: ["je vends", "tu vends", "il/elle/on vend", "nous vendons", "vous vendez", "ils/elles vendent" ],
-    },
-    {
-        frenchInfinitive: "vendre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles vendent ",
-        frenchConjugationsBank: ["je vends", "tu vends", "il/elle/on vend", "nous vendons", "vous vendez", "ils/elles vendent" ],
-    },
-    {
-        frenchInfinitive: "venir",
-        englishPersonNumber: "I",
-        frenchConjugated: "je viens ",
-        frenchConjugationsBank: ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent" ],
-    },
-    {
-        frenchInfinitive: "venir",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu viens ",
-        frenchConjugationsBank: ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent" ],
-    },
-    {
-        frenchInfinitive: "venir",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on vient ",
-        frenchConjugationsBank: ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent" ],
-    },
-    {
-        frenchInfinitive: "venir",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous venons ",
-        frenchConjugationsBank: ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent" ],
-    },
-    {
-        frenchInfinitive: "venir",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous venez ",
-        frenchConjugationsBank: ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent" ],
-    },
-    {
-        frenchInfinitive: "venir",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles viennent ",
-        frenchConjugationsBank: ["je viens", "tu viens", "il/elle/on vient", "nous venons", "vous venez", "ils/elles viennent" ],
-    },
-    {
-        frenchInfinitive: "vivre",
-        englishPersonNumber: "I",
-        frenchConjugated: "je vis ",
-        frenchConjugationsBank: ["je vis", "tu vis", "il/elle/on vit", "nous vivons", "vous vivez", "ils/elles vivent" ],
-    },
-    {
-        frenchInfinitive: "vivre",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu vis ",
-        frenchConjugationsBank: ["je vis", "tu vis", "il/elle/on vit", "nous vivons", "vous vivez", "ils/elles vivent" ],
-    },
-    {
-        frenchInfinitive: "vivre",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on vit ",
-        frenchConjugationsBank: ["je vis", "tu vis", "il/elle/on vit", "nous vivons", "vous vivez", "ils/elles vivent" ],
-    },
-    {
-        frenchInfinitive: "vivre",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous vivons ",
-        frenchConjugationsBank: ["je vis", "tu vis", "il/elle/on vit", "nous vivons", "vous vivez", "ils/elles vivent" ],
-    },
-    {
-        frenchInfinitive: "vivre",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous vivez ",
-        frenchConjugationsBank: ["je vis", "tu vis", "il/elle/on vit", "nous vivons", "vous vivez", "ils/elles vivent" ],
-    },
-    {
-        frenchInfinitive: "vivre",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles vivent ",
-        frenchConjugationsBank: ["je vis", "tu vis", "il/elle/on vit", "nous vivons", "vous vivez", "ils/elles vivent" ],
-    },
-    {
-        frenchInfinitive: "dire",
-        englishPersonNumber: "I",
-        frenchConjugated: "je dis ",
-        frenchConjugationsBank: ["je dis", "tu dis", "il/elle/on dit", "nous disons", "vous dites", "ils/elles disent" ],
-    },
-    {
-        frenchInfinitive: "dire",
-        englishPersonNumber: "you (singular, familiar)",
-        frenchConjugated: "tu dis ",
-        frenchConjugationsBank: ["je dis", "tu dis", "il/elle/on dit", "nous disons", "vous dites", "ils/elles disent" ],
-    },
-    {
-        frenchInfinitive: "dire",
-        englishPersonNumber: "he/she/one",
-        frenchConjugated: "il/elle/on dit ",
-        frenchConjugationsBank: ["je dis", "tu dis", "il/elle/on dit", "nous disons", "vous dites", "ils/elles disent" ],
-    },
-    {
-        frenchInfinitive: "dire",
-        englishPersonNumber: "we",
-        frenchConjugated: "nous disons ",
-        frenchConjugationsBank: ["je dis", "tu dis", "il/elle/on dit", "nous disons", "vous dites", "ils/elles disent" ],
-    },
-    {
-        frenchInfinitive: "dire",
-        englishPersonNumber: "you (singular formal or plural)",
-        frenchConjugated: "vous dites",
-        frenchConjugationsBank: ["je dis", "tu dis", "il/elle/on dit", "nous disons", "vous dites", "ils/elles disent" ],
-    },
-    {
-        frenchInfinitive: "dire",
-        englishPersonNumber: "they",
-        frenchConjugated: "ils/elles disent ",
-        frenchConjugationsBank: ["je dis", "tu dis", "il/elle/on dit", "nous disons", "vous dites", "ils/elles disent" ],
+        "frenchInfinitive": "descendre",
+        "englishPersonNumber": "they",
+        "frenchConjugated": "ils/elles descendent",
+        "frenchConjugationsBank": ["je descends", "tu descends", "il/elle/on descend", "nous descendons", "vous descendez", "ils/elles descendent"]
     },
 ];
 
-const verbPlaceholder = document.getElementById("verb-placeholder");
-const subjectPronounPlaceholder = document.getElementById("english-subject-placeholder");
-const answerButtons = document.querySelectorAll(".answers button");
+document.addEventListener("DOMContentLoaded", () => {
+    const verbPlaceholder = document.getElementById("verb-placeholder");
+    const subjectPronounPlaceholder = document.getElementById("english-subject-placeholder");
+    const answersContainer = document.querySelector(".answers");
 
+    let score = 0;
+    let currentTries = 0;
+    let verbIndexes = [];
 
-/* Verb link */
-const firstVerb = verbData[Math.floor(Math.random() * verbData.length)]; 
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    };
 
-/* Tell HTML what to do */
-verbPlaceholder.textContent = firstVerb.frenchInfinitive;
-subjectPronounPlaceholder.textContent = firstVerb.englishPersonNumber;
+    const displayMessage = (message) => {
+        const popup = document.createElement("div");
+        popup.textContent = message;
+        popup.classList.add("popup");
+        document.body.appendChild(popup);
+        setTimeout(() => {
+            popup.style.opacity = "0";
+            setTimeout(() => {
+                document.body.removeChild(popup);
+            }, 1000);
+        }, 2500);
+    };
 
+    const handleButtonClick = (event) => {
+        const clickedButton = event.target.closest("button");
+        if (!clickedButton) return;
 
-/* Bank of FR verbs */
-const frenchConjugations = firstVerb.frenchConjugationsBank;
+        const conjugation = clickedButton.textContent;
+        const isCorrect = clickedButton.getAttribute("data-correct") === "true";
 
-/* Wrong answers */
-while (frenchConjugations.length < 6) {
-  const randomConjugation = verbData[Math.floor(Math.random() * verbData.length)].frenchConjugated;
-if (!frenchConjugations.includes(randomConjugation)) {
-    frenchConjugations.push(randomConjugation);
-}
-}
+        console.log('Clicked Answer:', conjugation);
+        console.log('Is Correct?', isCorrect);
+        console.log('Tries:', currentTries);
 
-/* Shuffle */
-for (let i = frenchConjugations.length - 1; i > 0; i--) {
-  const j = Math.floor(Math.random() * (i + 1));
-[frenchConjugations[i], frenchConjugations[j]] = [frenchConjugations[j], frenchConjugations[i]];
-}
+        if (isCorrect) {
+            score += 10;
+            displayMessage("Bien fait ! 🥳");
+        } else {
+            score -= 5;
+            displayMessage("Essaie encore 😕");
+        }
 
-/* Push to buttons */
-answerButtons.forEach((button, index) => {
-button.textContent = frenchConjugations[index];
+        document.getElementById("score").textContent = score;
+        currentTries = 0;
+        console.log('New Score:', score);
+        console.log('New Tries:', currentTries);
+        generateRandomQuestion();
+    };
+
+    answersContainer.addEventListener("click", handleButtonClick);
+
+    const generateRandomQuestion = () => {
+        if (verbIndexes.length === 0) {
+            verbIndexes = Array.from({ length: verbData.length }, (_, i) => i);
+            shuffleArray(verbIndexes);
+        }
+
+        const randomIndex = Math.floor(Math.random() * verbIndexes.length);
+        const randomVerbIndex = verbIndexes[randomIndex];
+        const randomVerbData = verbData[randomVerbIndex];
+
+        console.log('Player Should Click:', randomVerbData.frenchConjugated);
+
+        verbPlaceholder.textContent = randomVerbData.frenchInfinitive;
+        subjectPronounPlaceholder.textContent = randomVerbData.englishPersonNumber;
+
+        const conjugations = randomVerbData.frenchConjugationsBank.slice();
+
+        shuffleArray(conjugations);
+
+        const buttons = answersContainer.querySelectorAll("button");
+
+        buttons.forEach((button, index) => {
+            button.textContent = conjugations[index];
+            button.setAttribute("data-correct", conjugations[index] === randomVerbData.frenchConjugated);
+        });
+    };
+
+    generateRandomQuestion();
 });
