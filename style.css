@@ -36,24 +36,33 @@ body {
 
 @media screen and (min-width: 768px) {
     .answers ul {
-        justify-content: space-between; /* Arrange buttons in a row */
+        justify-content: space-between; /* Puts buttons in a row */
         flex-wrap: wrap;
+        justify-content: center;
+
     }
     
     .answers li {
         width: calc(33.33% - 10px); 
+        justify-content: center;
+
     }
 }
 @media screen and (max-width: 767px) {
     .answers li {
         width: calc(50% - 10px);
+        justify-content: center;
+
     }
 }
 @media screen and (max-width: 480px) {
     .answers li {
         width: calc(100% - 10px);
+        justify-content: center;
+
     }
 }
+
 
 .answers ul {
     display: flex;
@@ -65,7 +74,10 @@ body {
 
 .answers li{
     margin: 5px;
+    text-align: center; 
+    display: flex;
     justify-content: center;
+    align-items: center; 
 }
 
 ul.bullet-list {
@@ -76,6 +88,7 @@ ul.bullet-list {
 ul.bullet-list li::before {
     content: "⚜️"; /* Fleur-de-lis symbol */
     margin-right: 8px;
+    
 }
 div.verb {
     background-color: #EF4135;
@@ -104,7 +117,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
 button:hover {
     background-color: #22e86e;
@@ -125,4 +142,20 @@ button:hover {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
     pointer-events: auto; 
+}
+
+.score-timer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #white; 
+    font-size: 18px; 
+    padding: 10px; 
+    position: relative;
+    background: none; 
+}
+
+.score-croissant {
+    display: flex;
+    align-items: center;
 }

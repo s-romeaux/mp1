@@ -1097,20 +1097,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    const displayMessage = (message) => {
+    function displayMessage(message, isCorrect) {
         const popup = document.createElement("div");
         popup.textContent = message;
         popup.classList.add("popup");
         document.body.appendChild(popup);
+    
+        if (isCorrect) {
+            document.getElementById("correctSound").play(); /*👍*/
+        } else {
+            document.getElementById("incorrectSound").play(); /*👎*/
+        }
+    
         setTimeout(() => {
             popup.style.opacity = "0";
             setTimeout(() => {
                 document.body.removeChild(popup);
             }, 1000);
         }, 2500);
-    };
-
-    const handleButtonClick = (event) => {
+    }
+        const handleButtonClick = (event) => {
         const clickedButton = event.target.closest("button");
         if (!clickedButton) return;
 
@@ -1123,10 +1129,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isCorrect) {
             score += 10;
-            displayMessage("Bien fait ! 🥳");
+            displayMessage("Bien fait ! 🥳", true);
+            if (score > 99 && score < 110) {
+                confetti({
+                    particleCount: 300,
+                    scalar: 2,
+                    spread: 500,
+                });
+            }
         } else {
             score -= 5;
-            displayMessage("Essaie encore 😕");
+            displayMessage("Essaie encore 😕", false);
         }
 
         document.getElementById("score").textContent = score;
