@@ -1085,10 +1085,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const verbPlaceholder = document.getElementById("verb-placeholder");
     const subjectPronounPlaceholder = document.getElementById("english-subject-placeholder");
     const answersContainer = document.querySelector(".answers");
+    const scoreDisplay = document.getElementById("score");
+    const timerDisplay = document.getElementById("timer");
 
     let score = 0;
     let currentTries = 0;
     let verbIndexes = [];
+    let chronometerStarted = false;
+    let chronometerStartTime = null;
+    let chronometerInterval = null;
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -1102,13 +1107,13 @@ document.addEventListener("DOMContentLoaded", () => {
         popup.textContent = message;
         popup.classList.add("popup");
         document.body.appendChild(popup);
-    
+
         if (isCorrect) {
             document.getElementById("correctSound").play(); /*👍*/
         } else {
             document.getElementById("incorrectSound").play(); /*👎*/
         }
-    
+
         setTimeout(() => {
             popup.style.opacity = "0";
             setTimeout(() => {
@@ -1116,9 +1121,43 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 1000);
         }, 2500);
     }
-        const handleButtonClick = (event) => {
+
+    const startChronometer = () => {
+        chronometerStarted = true;
+        chronometerStartTime = Date.now();
+
+        chronometerInterval = setInterval(() => {
+            const currentTime = Date.now();
+            const elapsedTime = currentTime - chronometerStartTime;
+            const timeInSeconds = Math.floor(elapsedTime / 1000);
+            timerDisplay.textContent = `${timeInSeconds} s`;
+        }, 1000);
+    };
+
+    const stopChronometer = () => {
+        if (chronometerStarted) {
+            chronometerStarted = false;
+            clearInterval(chronometerInterval);
+
+            const chronometerEndTime = Date.now();
+            const elapsedTime = chronometerEndTime - chronometerStartTime;
+            const timeInSeconds = Math.floor(elapsedTime / 1000);
+
+            if (score > 99 && score < 111) {
+                document.getElementById("100Sound").play(); 
+            }
+
+            timerDisplay.textContent = `${timeInSeconds} s`;
+        }
+    };
+
+    const handleButtonClick = (event) => {
         const clickedButton = event.target.closest("button");
         if (!clickedButton) return;
+
+        if (!chronometerStarted) {
+            startChronometer();
+        }
 
         const conjugation = clickedButton.textContent;
         const isCorrect = clickedButton.getAttribute("data-correct") === "true";
@@ -1130,23 +1169,20 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isCorrect) {
             score += 10;
             displayMessage("Bien fait ! 🥳", true);
-            if (score > 99 && score < 110) {
-                confetti({
-                    particleCount: 300,
-                    scalar: 2,
-                    spread: 500,
-                });
-            }
         } else {
             score -= 5;
             displayMessage("Essaie encore 😕", false);
         }
 
-        document.getElementById("score").textContent = score;
+        scoreDisplay.textContent = score;
         currentTries = 0;
         console.log('New Score:', score);
         console.log('New Tries:', currentTries);
         generateRandomQuestion();
+
+        if (score > 99 && score < 110) {
+            stopChronometer();
+        }
     };
 
     answersContainer.addEventListener("click", handleButtonClick);

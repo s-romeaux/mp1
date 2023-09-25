@@ -27,8 +27,8 @@ body {
 .number-person-placeholders {
     display: grid;
     place-items: center;
+    margin: 8px;
 }
-
 
 .number-person-placeholders p {
     margin-right: 30px; 
@@ -63,7 +63,6 @@ body {
     }
 }
 
-
 .answers ul {
     display: flex;
     flex-wrap: wrap;
@@ -90,6 +89,7 @@ ul.bullet-list li::before {
     margin-right: 8px;
     
 }
+
 div.verb {
     background-color: #EF4135;
     font-size: 24px;
@@ -98,6 +98,7 @@ div.verb {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     
 }
+
 .number-person-placeholders {
     background-color: white;
     color: #0055A4;
@@ -107,6 +108,7 @@ div.verb {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     justify-content: center;
 }
+
 button {
     background-color: #fcb52a;
     color: black;
@@ -123,7 +125,8 @@ button {
     align-items: center;
     }
 
-button:hover {
+
+    button:hover {
     background-color: #22e86e;
 }
 
