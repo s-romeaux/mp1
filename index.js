@@ -1125,31 +1125,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const startChronometer = () => {
         chronometerStarted = true;
         chronometerStartTime = Date.now();
-
+    
         chronometerInterval = setInterval(() => {
             const currentTime = Date.now();
             const elapsedTime = currentTime - chronometerStartTime;
             const timeInSeconds = Math.floor(elapsedTime / 1000);
-            timerDisplay.textContent = `${timeInSeconds} s`;
-        }, 1000);
+            const milliseconds = (elapsedTime % 1000).toString().padStart(3, '0');
+            timerDisplay.textContent = `${timeInSeconds} s ${milliseconds} ms`;
+        }, 100); 
     };
-
+    
     const stopChronometer = () => {
         if (chronometerStarted) {
             chronometerStarted = false;
             clearInterval(chronometerInterval);
-
+    
             const chronometerEndTime = Date.now();
             const elapsedTime = chronometerEndTime - chronometerStartTime;
             const timeInSeconds = Math.floor(elapsedTime / 1000);
-
+            const milliseconds = (elapsedTime % 1000).toString().padStart(3, '0');
+    
             if (score > 99 && score < 111) {
                 document.getElementById("100Sound").play(); 
             }
-
-            timerDisplay.textContent = `${timeInSeconds} s`;
+    
+            timerDisplay.textContent = `${timeInSeconds} s ${milliseconds} ms`;
         }
     };
+    
 
     const handleButtonClick = (event) => {
         const clickedButton = event.target.closest("button");
