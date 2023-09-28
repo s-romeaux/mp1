@@ -19,15 +19,17 @@ body {
     height: auto;
 }
 
-.verb, #verb-placeholder {
-    text-align: center;    
+.verb, #verb-placeholder,
+.number-person-placeholders, #english-subject-placeholder {
+    display: grid;
+    text-align: center; 
+    margin: 8px;
 }
 
-.verb,
-.number-person-placeholders {
-    display: grid;
-    place-items: center;
-    margin: 8px;
+#verb-placeholder, #english-subject-placeholder {
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 2;
 }
 
 .number-person-placeholders p {
@@ -66,7 +68,6 @@ body {
 .answers ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     list-style: none;
     padding: 0;
 }
@@ -75,7 +76,6 @@ body {
     margin: 5px;
     text-align: center; 
     display: flex;
-    justify-content: center;
     align-items: center; 
 }
 
@@ -106,7 +106,6 @@ div.verb {
     padding: 3px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    justify-content: center;
 }
 
 button {
@@ -119,10 +118,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     }
 
 

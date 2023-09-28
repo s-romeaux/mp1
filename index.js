@@ -1082,6 +1082,7 @@ const verbData = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
+                /*Variable Decs******/
     const verbPlaceholder = document.getElementById("verb-placeholder");
     const subjectPronounPlaceholder = document.getElementById("english-subject-placeholder");
     const answersContainer = document.querySelector(".answers");
@@ -1094,14 +1095,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let chronometerStarted = false;
     let chronometerStartTime = null;
     let chronometerInterval = null;
+    let confettiTriggered = false; 
 
+                    /*Function to randomise******/
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
     };
-
+                /*Displays pop up msgs******/
     function displayMessage(message, isCorrect) {
         const popup = document.createElement("div");
         popup.textContent = message;
@@ -1122,10 +1125,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2500);
     }
 
+                /*Timer start******/    
     const startChronometer = () => {
         chronometerStarted = true;
         chronometerStartTime = Date.now();
-    
+
         chronometerInterval = setInterval(() => {
             const currentTime = Date.now();
             const elapsedTime = currentTime - chronometerStartTime;
@@ -1134,26 +1138,38 @@ document.addEventListener("DOMContentLoaded", () => {
             timerDisplay.textContent = `${timeInSeconds} s ${milliseconds} ms`;
         }, 100); 
     };
-    
+
+                    /*Triggers 100 Audio & Confetti******/    
     const stopChronometer = () => {
         if (chronometerStarted) {
             chronometerStarted = false;
             clearInterval(chronometerInterval);
-    
+
             const chronometerEndTime = Date.now();
             const elapsedTime = chronometerEndTime - chronometerStartTime;
             const timeInSeconds = Math.floor(elapsedTime / 1000);
             const milliseconds = (elapsedTime % 1000).toString().padStart(3, '0');
-    
-            if (score > 99 && score < 111) {
-                document.getElementById("100Sound").play(); 
+
+            if (score > 99 && score < 111 && !confettiTriggered) {
+                triggerConfetti(); 
+                document.getElementById("100Sound").play();
+                confettiTriggered = true; 
             }
-    
+
             timerDisplay.textContent = `${timeInSeconds} s ${milliseconds} ms`;
         }
     };
-    
 
+
+    const triggerConfetti = () => {
+        confetti({
+            particleCount: 400,
+            scalar: 2,
+            spread: 500,
+        });
+    };
+
+                        /*Buttons/Messages/Winnder/******/   
     const handleButtonClick = (event) => {
         const clickedButton = event.target.closest("button");
         if (!clickedButton) return;
@@ -1183,7 +1199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('New Tries:', currentTries);
         generateRandomQuestion();
 
-        if (score > 99 && score < 110) {
+        if (score > 99 && score < 111) {
             stopChronometer();
         }
     };
@@ -1202,6 +1218,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         console.log('Player Should Click:', randomVerbData.frenchConjugated);
 
+                    /*Fill in place holders******/   
         verbPlaceholder.textContent = randomVerbData.frenchInfinitive;
         subjectPronounPlaceholder.textContent = randomVerbData.englishPersonNumber;
 
